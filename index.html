@@ -4,50 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in Form</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="title">
-            Log In
+    <div class="container">
+        <img id="logo" src="/Image/ezfarelogo.png">
+        <div class="text">
+            <h1>LOGIN</h1>
+            <p>LANDING PAGE</p>
         </div>
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Email or Phone" required>
+        <form  class="form">
+            <div class="animated-input">
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
             </div>
-            <div class="input-box">
-                <input type="password" placeholder="Password" required>
-            </div>
-            <div class="remember-forgot">
-                <div class="remember">
-                    <input type="checkbox">Remember me
+            <div class="check">
+                <div>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="disc"></label>
+                    <label for="check" class="remember">Remember</label>
                 </div>
-                <div class="forgot">
-                    <a href="#">Forgot Password</a>
-                </div>
-            </div>
-            <div class="input-box button">
-                <input type="submit" value="Login">
-            </div>
-            <div class="option">
-                Or log in with Social Media
-                <div class="facebook">
-                    <a href="#">
-                        <i class='bx bxl-facebook'></i>
-                        Facebook
-                    </a>
-                </div>
-                <div class="twitter">
-                    <a href="#">
-                        <i class='bx bxl-twitter'></i>
-                        Twitter
-                    </a>
-                </div>
-            </div>
-            <div class="signup-link">
-                Don't Have an account? <a href="#">Sign Up</a>
+                <p class="forget"><a href="#">Forget Password ?</a></p>
             </div>
         </form>
+        <button class="btn" type="submit">LOGIN</button>
+        <p class="account"><a href="#">Create Account ?</a></p>
     </div>
 </body>
 </html>
